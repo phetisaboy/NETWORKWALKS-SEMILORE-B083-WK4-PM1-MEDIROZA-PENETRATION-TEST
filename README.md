@@ -1,3 +1,4 @@
+<img width="1193" height="520" alt="M1-sqli-login-bypass-patient-portal" src="https://github.com/user-attachments/assets/e0df9a11-42f8-4102-ab95-e97bae715c9e" />
 # NETWORKWALKS-SEMILORE-B083-WK4-PM1-MEDIROZA-PENETRATION-TEST
 
 # Penetration Testing Project: Mediroza General Hospital
@@ -45,7 +46,9 @@ Everything after `--` is treated as a comment, so the password is never actually
 - **Access gained:** Full login bypass, admin-level patient portal access
 - **Files retrieved:** 3 encrypted PDF pathology reports (patient_report_1.pdf, patient_report_2.pdf, patient_report_3.pdf)
 
-Screenshots: `M1-sqli-login-bypass-patient-portal.png`, `M1-patient-portal-3-pdf-files.png`, `M1-sha256-hashes-3-files.png`
+Screenshots: <img width="1102" height="392" alt="M1-sha256-hashes-3-files" src="https://github.com/user-attachments/assets/ac8d7b38-6c67-4924-ab5b-99a34d846ba0" />
+<img width="1193" height="520" alt="M1-sqli-login-bypass-patient-portal" src="https://github.com/user-attachments/assets/bceb8c48-7174-4e5a-99d6-ab08f03c602f" />
+
 
 ## Milestone 2: Password Cracking & Data Extraction
 **Objective:** Crack the encryption on all 3 retrieved files.
@@ -64,7 +67,10 @@ Screenshots: `M1-sqli-login-bypass-patient-portal.png`, `M1-patient-portal-3-pdf
 | patient_report_2.pdf | `password` | Very weak, cracked instantly |
 | patient_report_3.pdf | `!@#$%^&` | Stronger, required a larger wordlist (rockyou.txt) |
 
-Screenshots: `M2-file1-cracked-123456.png`, `M2-file2-cracked-password.png`, `M2-file3-cracked-symbols.png`
+Screenshots: <img width="858" height="255" alt="M2-file3-cracked-(!@#$%^ )" src="https://github.com/user-attachments/assets/99485fcf-b0e6-4059-8087-8b6e21bbe7c9" />
+<img width="835" height="217" alt="M2-file2-cracked- password" src="https://github.com/user-attachments/assets/49fa8bde-094d-4121-99a5-03364bd397b3" />
+<img width="853" height="257" alt="M2-file1-cracked-123456" src="https://github.com/user-attachments/assets/e6d2f019-804c-47d5-9741-d9bd56f1ff57" />
+
 
 ## Milestone 3: Metadata Analysis & Critical Data Exposure
 **Objective:** Find the critical data exposure on the client server, and locate staff salary and shareholder data.
@@ -84,7 +90,10 @@ Screenshots: `M2-file1-cracked-123456.png`, `M2-file2-cracked-password.png`, `M2
 - **Shareholder data exposed:** 10 shareholder records including names, share percentages, shares held, and share class
 - **Severity note:** The exposure of national ID numbers alongside salary data represents a significant privacy risk beyond the task's stated scope of "salary and shareholder details."
 
-Screenshots (redacted): `M3-file3-metadata-clue-found.png`, `M3-exposed-directory-listing.png`, `M3-database-backup-content-REDACTED.png`
+Screenshots (redacted): <img width="553" height="667" alt="M3-database-backup-content-REDACTED" src="https://github.com/user-attachments/assets/b82ba9dc-03ef-4e23-ae78-fa1ea1aa447a" />
+<img width="1115" height="237" alt="M3-exposed-directory-listing" src="https://github.com/user-attachments/assets/08415c68-be07-4a7a-a494-b7f038189c30" />
+<img width="440" height="613" alt="M3-file3-metadata-clue-found" src="https://github.com/user-attachments/assets/e6d6d9de-e1db-41b3-8563-743114780295" />
+
 
 ## Problems Encountered & Solutions
 - **Problem:** Downloaded `rockyou.txt` from a browser source kept being silently removed after download.
