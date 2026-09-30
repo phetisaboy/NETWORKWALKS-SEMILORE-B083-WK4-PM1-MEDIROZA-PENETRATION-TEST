@@ -1,6 +1,4 @@
-<img width="1193" height="520" alt="M1-sqli-login-bypass-patient-portal" src="https://github.com/user-attachments/assets/e0df9a11-42f8-4102-ab95-e97bae715c9e" />
 # NETWORKWALKS-SEMILORE-B083-WK4-PM1-MEDIROZA-PENETRATION-TEST
-
 # Penetration Testing Project: Mediroza General Hospital
 
 **Pentester:** Aboderin Semilore Gold
